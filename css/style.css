@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* ===============================================
+                      Common CSS part start
+ ================================================*/
+:root {
+    --ff-primary: "Inter", sans-serif;
+
+    --clr-primary: #5956E8;
+    --clr-text: #181818;
+    --clr-white: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.common_heading {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.common_heading h2 {
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.common_heading p {
+    width: 542px;
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    opacity: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+}
+
+/* ===============================================
+                      Common CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Nav CSS part start
+ ================================================*/
+nav {
+    padding: 50px 0 35px;
+    background-color: #fff !;
+}
+
+.navbar-nav {
+    gap: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--ff-primary) !important;
+    color: var(--clr-text);
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--clr-primary);
+}
+
+nav .navbarBtn {
+    color: white;
+    background: var(--clr-primary);
+    outline: none;
+    padding: 13px 24px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 18px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+nav .navbarBtn:hover {
+    background-color: #2926ac;
+}
+
+/* ===============================================
+                      Nav CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Banner CSS part start
+ ================================================*/
+#banner {
+    padding: 165px 0 200px;
+    background-color: var(--clr-primary);
+}
+
+#banner .imgCol {
+    display: flex;
+    justify-content: end;
+}
+
+#banner .row {
+    align-items: center;
+}
+
+#banner h1 {
+    color: #FFFEFE;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 80px;
+    margin-bottom: 25px;
+}
+
+#banner p {
+    width: 542px;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.bannerBtn {
+    padding: 11px 20px;
+    border: solid 1px white;
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.bannerBtn:hover {
+    color: var(--clr-white);
+    background-color: transparent;
+}
+
+/* ===============================================
+                      Banner CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Service CSS part start
+ ================================================*/
+#service {
+    padding: 83px 0 100px;
+}
+
+#service .item {
+    height: 385px;
+    padding: 63px 48px;
+    border: solid #E3E3E3 .5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#service .item:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#service .item:hover .serviceIcon {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.serviceContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.serviceIcon {
+    font-size: 37px;
+    padding: 17px;
+    border: solid var(--clr-primary) .5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: var(--clr-primary);
+    margin-bottom: 30px;
+}
+
+.serviceH2 {
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+.serviceText {
+    width: 274px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--clr-text);
+    opacity: 70%;
+}
+
+/* ===============================================
+                      Service CSS part End
+ ================================================*/
+
+/* ===============================================
+                      portfolio CSS part start
+ ================================================*/
+#portfolio {
+    padding-bottom: 100px;
+}
+
+.portfolioContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolioContent .imgBox {
+    position: relative;
+    cursor: pointer;
+}
+
+.portOverlay {
+    width: 230px;
+    height: 0px;
+    background: var(--clr-primary);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.portfolioContent .imgBox:hover .portOverlay {
+    height: 113px;
+}
+
+.portOverlay h2 {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: transparent;
+}
+
+.portOverlay a {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.portOverlay a:hover {
+    opacity: 70%;
+}
+
+.portfolioContent .imgBox:hover .portOverlay h2 {
+    color: #fff;
+}
+
+.portfolioContent .imgBox:hover .portOverlay a {
+    color: #fff;
+}
+
+/* ===============================================
+                      portfolio CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Team CSS part start
+ ================================================*/
+#team {
+    padding: 0 0 50px 0;
+}
+
+.teamItem {
+    position: relative;
+    overflow: hidden;
+}
+.teamItem:hover .teamOverlay{
+width: 370px;
+height: 444px;
+bottom: 0px;
+left: 0px;
+}
+.teamOverlay {
+    width: 0px;
+    height: 0px;
+    background: rgb(89, 86, 232);
+    background: linear-gradient(0deg, rgba(89, 86, 232, 1) 0%, transparent 45%);
+    position: absolute;
+    bottom: -170px;
+    left: -20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 34px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.teamOverlay h3 {
+    font-family: var(--ff-primary);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: var(--clr-white);
+}
+
+.teamOverlay h4 {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--clr-white);
+}
+
+/* ===============================================
+                      Team CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Review CSS part start
+ ================================================*/
+#reviews {
+    padding: 0 0 100px 0;
+}
+
+.reviewTitle h2 {
+    width: 603px;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+.reviewTitle p {
+    width: 542px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--clr-text);
+    opacity: 70%;
+    margin-bottom: 50px;
+}
+
+.reviewItem {
+    padding: 48px;
+    box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+.reviewIcon {
+    display: flex;
+    gap: 7px;
+    padding: 0;
+    font-size: 20px;
+    color: #FBBF25;
+    margin: 30px 0 0 0;
+}
+
+.reviewText {
+    width: 274px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--clr-text);
+    opacity: 70%;
+    margin: 20px 0 15px 0;
+}
+
+.reviewItem .customerName {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--clr-text);
+}
+
+.reviewItem .customerName__title {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+
+.bigIcon {
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+    font-size: 64px;
+    color: var(--clr-primary);
+    opacity: 10%;
+}
+
+/* ===============================================
+                      Review CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Blog CSS part start
+ ================================================*/
+#blog {
+    padding: 0 0 100px 0;
+}
+
+.blogItem {
+    padding: 17px 19px 46px 19px;
+    border: #E3E3E3 solid 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.blogItem .sub__heading {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.blogItem .sub__heading .admin {
+    display: flex;
+    gap: 10px;
+}
+
+.blogItem .sub__heading .admin i {
+    font-size: 18px;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .admin h6 {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .date {
+    display: flex;
+    gap: 10px;
+}
+
+.blogItem .sub__heading .date i {
+    font-size: 18px;
+    color: #5D5D5D;
+}
+
+.blogItem .sub__heading .date h6 {
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: #5D5D5D;
+}
+
+.blogItem .textSection {
+    margin-left: 16px;
+}
+
+.blogItem .textSection h3 {
+    width: 315px;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20;
+    color: var(--clr-text);
+    margin-top: 10px;
+}
+
+.blogItem .textSection p {
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.blogItem .textSection a {
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--clr-primary);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.blogItem .textSection a:hover {
+    color: #2926ac;
+}
+
+/* ===============================================
+                      Blog CSS part End
+ ================================================*/
+
+/* ===============================================
+                      Footer CSS part start
+ ================================================*/
+footer {
+    background-color: rgba(89, 86, 232, 0.10);
+    padding: 100px 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo p {
+    margin: 15px 0 20px 0;
+    width: 300px;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+
+.wrapper {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-family: var(--ff-primary);
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .facebook {
+    color: #337FFF;
+}
+
+.wrapper .twitter {
+    color: #33CCFF;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerMenu h3 {
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--clr-text);
+    margin-bottom: 15px;
+}
+
+.footerMenu ul {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+footer ul a {
+    color: #5D5D5D;
+}
+/* ===============================================
+                      Footer CSS part End
+ ================================================*/
